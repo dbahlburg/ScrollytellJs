@@ -1,0 +1,87 @@
+<!DOCTYPE html> <html lang="en">
+
+<head>
+  <meta charset="UTF-8"> <meta name="viewport" profile="http://www.w3.org/2005/10/profile" content="width=device-width,
+  initial-scale=1.0"> <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>myFirstScrollytell</title>
+  <link rel="stylesheet" href="main.css">
+  <link rel="icon"
+  type="image/png"
+  href="frame30.png">
+</head>
+
+<body>
+
+      <section class="container">
+        <div class="content">
+          <h1>Antarctic krill throughout the  <br> year</h1>
+          <p >Dominik Bahlburg  <br>
+            January, 17th 2021  <br> <br>
+            With this project, I want to tell you an interactive  <br>
+            story about the life of Antarctic krill. <br>
+          Antarctic krill are shrimp-like animals reaching <br>
+          a maximum size of 6cm. Although they are small, <br>
+          krill are considered  a key species in the marine <br>
+          Antarctic ecosystem due to their huge abundance.<br>
+          Many other species depend on krill as a food source <br>
+          but the small crustaceans also play a critical role in <br>
+          the cycling of nutrients. Throughout their lifes, krill <br>
+          have to cope with some  of the harshest environmental <br>
+          conditions on earth.</p>
+        </div>
+    </section>
+    <section class="container">
+      <div class="content">
+        <h1>The sea ice extends quickly</h1>
+        <p >As days become shorter</p>
+      </div>
+    </section>
+    <section class="container">
+      <div class="content">
+        <h1>Colours fade out</h1>
+        <p >because I want to explain something</p>
+      </div>
+    </section>
+  <div id='set-height'></div>
+
+  <video id="v0" tabindex="0" autobuffer preload>
+    <source type = 'video/mp4;codecs="avc1.42E01E, mp4a.40.2"' src="video720.mp4"></source>
+    <source type = "video/webm; codecs=&quot;vp8, vorbis&quot;" src="video.webm"></source>
+  </video>
+
+
+  <script src = 'sticky.js'></script>
+
+  <script type = "text/javascript">
+  enterView({
+    selector:'section',
+    enter: function(el){
+      el.classList.add('entered');
+    }
+
+  })
+  var frameNumber = 0, // start video at frame 0
+  // lower numbers = faster playback
+  playbackConst = 800, // Set to 1000 to make the playback slower
+  // get page height from video duration
+  setHeight = document.getElementById("set-height"),
+  // select video element
+  vid = document.getElementById('v0');
+  // dynamically set the page height according to video length
+  vid.addEventListener('loadedmetadata', function () {
+    setHeight.style.height = Math.floor(vid.duration) * playbackConst + "px";
+  });
+
+  // // Use requestAnimationFrame for smooth playback
+  function scrollPlay() {
+    var frameNumber = window.pageYOffset / playbackConst;
+    vid.currentTime = frameNumber;
+    window.requestAnimationFrame(scrollPlay);
+  }
+
+  window.requestAnimationFrame(scrollPlay);
+  </script>
+
+</body>
+
+</html>
