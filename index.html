@@ -11,21 +11,29 @@
 
   <link rel="stylesheet" href="main.css">
   <link rel="icon"
-  type="image/png"
-  href="frame30.png">
+  type="image/svg"
+  href="thumbnail.svg">
 </head>
 
 <body id = 'Body'>
 
     <header class = 'showcase'>
         <div class ='headerContent'>
-            <img src = 'logo.png' class = 'logo' alt = 'Earth'>
+        <div class="SGLabel">
+          <p class="fadingContent"> South Georgia </p>
+          <img class="fadingContent" src = 'visuals/backgroundStereoLegend.png' alt = 'Legend' style="width: 200px;
+          margin-top:-50%;">
+        </div>
+            <img src = 'visuals/krillV2.svg' class = 'logo' alt = 'Krill'>
             <div class = 'title'>
-              Welcome to the life of krill
+              This is an interactive story about the life of krill. <br><br>
+                <!-- <p style="color: #bfbfbf" > -->
+                  Hover over the screen to start
+                <!-- </p> -->
             </div>
-            <div class="titleSubtext">
-              Let's go on an interactive journey covering the life of krill.
-            </div>
+            <!-- <div class="titleSubtext">
+              Dominik Bahlburgs
+            </div> -->
         </div>
     </header>
 
@@ -53,8 +61,7 @@
       <section class="container">
         <div class="content">
           <h1 class="sectionHead">Antarctic krill throughout the  <br> year</h1>
-          <p class = 'sectionText'>Dominik Bahlburg  <br>
-            January, 17th 2021  <br> <br>
+          <p class = 'sectionText'>
             With this project, I want to tell you an interactive  <br>
             story about the life of Antarctic krill. <br>
           Antarctic krill are shrimp-like animals reaching <br>
@@ -123,8 +130,25 @@
   window.requestAnimationFrame(scrollPlay);
   </script>
 
-<footer class = 'center bg-dark'>
-  <p>Dominik Bahlburg &copy; 2021</p>
+<footer class = 'center bg-dark grid-2'>
+  <div>
+    <p>Dominik Bahlburg &copy; 2021</p>
+  </div>
+  <div>
+  <a href="https://tu-dresden.de/bu/umwelt/forst/ww/bsa/die-professur/staff/dominik-bahlburg" class="icon-block">
+      <!-- <i class="fab fa-twitter-square fa-3x" style="color:#DDDDDD;"></i> -->
+      <img src="tuDresden.svg" alt="twitter" width="50" height="50">
+  </a>
+    <a href="https://twitter.com/DBahlburg" class="icon-block">
+        <!-- <i class="fab fa-twitter-square fa-3x" style="color:#DDDDDD;"></i> -->
+        <img src="twitterWhite.svg" alt="twitter" width="50" height="50">
+    </a>
+    <a href="https://github.com/dbahlburg" class="icon-block">
+        <!-- <i class="fab fa-twitter-square fa-3x" style="color:#DDDDDD;"></i> -->
+        <img src="github.svg" alt="twitter" width="50" height="50">
+    </a>
+  </div>
+
 </footer>
 
 
