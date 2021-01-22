@@ -4,19 +4,64 @@
   <meta charset="UTF-8"> <meta name="viewport" profile="http://www.w3.org/2005/10/profile" content="width=device-width,
   initial-scale=1.0"> <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>myFirstScrollytell</title>
+
+  <link rel="stylesheet"
+  href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+  crossorigin = 'anonymous'>
+
   <link rel="stylesheet" href="main.css">
   <link rel="icon"
-  type="image/png"
-  href="frame30.png">
+  type="image/svg"
+  href="thumbnail.svg">
 </head>
 
-<body>
+<body id = 'Body'>
+
+    <header class = 'showcase'>
+        <div class ='headerContent'>
+        <div class="SGLabel">
+          <p class="fadingContent"> South Georgia </p>
+          <img class="fadingContent" src = 'visuals/backgroundStereoLegend.png' alt = 'Legend' style="width: 200px;
+          margin-top:-50%;">
+        </div>
+            <img src = 'visuals/krillV2.svg' class = 'logo' alt = 'Krill'>
+            <div class = 'title'>
+              This is an interactive story about the life of krill. <br><br>
+                <!-- <p style="color: #bfbfbf" > -->
+                  Hover over the screen to start
+                <!-- </p> -->
+            </div>
+            <!-- <div class="titleSubtext">
+              Dominik Bahlburgs
+            </div> -->
+        </div>
+    </header>
+
+    <!-- Services -->
+    <section class = 'services'>
+      <div class="containerHeader grid-3 center">
+        <div>
+          <i class = 'fab fa-youtube fa-3x'></i>
+          <h3>YouTube</h3>
+          <p>Lorem Ipsum</p>
+        </div>
+        <div>
+          <i class = 'fas fa-chalkboard-teacher fa-3x'></i>
+          <h3>Courses</h3>
+          <p>Lorem Ipsum</p>
+        </div>
+        <div>
+          <i class = 'fas fa-briefcase fa-3x'></i>
+          <h3>Freelancing Projects</h3>
+          <p>Lorem Ipsum</p>
+        </div>
+      </div>
+    </section>
 
       <section class="container">
         <div class="content">
-          <h1>Antarctic krill throughout the  <br> year</h1>
-          <p >Dominik Bahlburg  <br>
-            January, 17th 2021  <br> <br>
+          <h1 class="sectionHead">Antarctic krill throughout the  <br> year</h1>
+          <p class = 'sectionText'>
             With this project, I want to tell you an interactive  <br>
             story about the life of Antarctic krill. <br>
           Antarctic krill are shrimp-like animals reaching <br>
@@ -32,22 +77,24 @@
     </section>
     <section class="container">
       <div class="content">
-        <h1>The sea ice extends quickly</h1>
-        <p >As days become shorter</p>
+        <h1 class="sectionHead">The sea ice extends quickly</h1>
+        <p class = 'sectionText'>As days become shorter</p>
       </div>
     </section>
     <section class="container">
       <div class="content">
-        <h1>Colours fade out</h1>
-        <p >because I want to explain something</p>
+        <h1 class="sectionHead">Colours fade out</h1>
+        <p class = 'sectionText'>because I want to explain something</p>
       </div>
     </section>
   <div id='set-height'></div>
 
-  <video id="v0" tabindex="0" autobuffer preload>
+
+
+  <!-- <video id="v0" tabindex="0" autobuffer preload>
     <source type = 'video/mp4;codecs="avc1.42E01E, mp4a.40.2"' src="video720.mp4"></source>
-    <source type = "video/webm; codecs=&quot;vp8, vorbis&quot;" src="video.webm"></source>
-  </video>
+    <source type = "video/webm; codecs=&quot;vp8, vorbis&quot;" src="video720.webm"></source>
+  </video> -->
 
 
   <script src = 'sticky.js'></script>
@@ -60,6 +107,7 @@
     }
 
   })
+
   var frameNumber = 0, // start video at frame 0
   // lower numbers = faster playback
   playbackConst = 800, // Set to 1000 to make the playback slower
@@ -81,6 +129,28 @@
 
   window.requestAnimationFrame(scrollPlay);
   </script>
+
+<footer class = 'center bg-dark grid-2'>
+  <div>
+    <p>Dominik Bahlburg &copy; 2021</p>
+  </div>
+  <div>
+  <a href="https://tu-dresden.de/bu/umwelt/forst/ww/bsa/die-professur/staff/dominik-bahlburg" class="icon-block">
+      <!-- <i class="fab fa-twitter-square fa-3x" style="color:#DDDDDD;"></i> -->
+      <img src="tuDresden.svg" alt="twitter" width="50" height="50">
+  </a>
+    <a href="https://twitter.com/DBahlburg" class="icon-block">
+        <!-- <i class="fab fa-twitter-square fa-3x" style="color:#DDDDDD;"></i> -->
+        <img src="twitterWhite.svg" alt="twitter" width="50" height="50">
+    </a>
+    <a href="https://github.com/dbahlburg" class="icon-block">
+        <!-- <i class="fab fa-twitter-square fa-3x" style="color:#DDDDDD;"></i> -->
+        <img src="github.svg" alt="twitter" width="50" height="50">
+    </a>
+  </div>
+
+</footer>
+
 
 </body>
 
