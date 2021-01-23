@@ -14,7 +14,7 @@ html, body { height: 100%;
   content:'';
   height: 100vh;
   width:100%;
-  background-image: url(visuals/backgroundStereo.png);
+  background-image: url(visuals/backgroundStereoTemplate2.png);
   background-size: cover;
   background-position:center;
   display:block;
@@ -85,7 +85,7 @@ filter:blur(0px);
 }
 
 .headerContent .title{
-  font-size: 1.3vw;
+  font-size: 2.5vh;
   line-height: 1.7;
   margin-top: 1rem;
 }
