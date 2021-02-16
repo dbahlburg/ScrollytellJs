@@ -54,7 +54,11 @@ filter:blur(0px);
   left: 50%;
 }
 
-
+.sectionHeader{
+  background-color: #c3c3c3;
+  padding-top: 8%;
+  padding-left: 9%;
+}
 
 .showcase:hover .logo {
   filter:blur(0px);
@@ -104,7 +108,7 @@ filter:blur(0px);
 
 .grid-3{
   display: grid;
-  grid-gap: 20px;
+  grid-gap: 100px;
   grid-template-columns: repeat(3, 1fr);
 }
 
@@ -113,6 +117,9 @@ filter:blur(0px);
   margin:auto;
 }
 
+.icon-block{
+  margin: 7px;
+}
 
 footer{
   padding: 2.2rem
@@ -137,7 +144,7 @@ h2{
   line-height: 1.5;
   padding-top: 35%;
   font-weight: 300;
-    font-size: 20px;
+  font-size: 20px;
 }
 svg{
   padding: 20px;
@@ -157,7 +164,7 @@ strong{
   font-weight: 300;
   background-image: linear-gradient(90deg,
         #c3c3c3 30%,
-        #575757 30%, #575757 100%);
+        #c3c3c3 30%, #c3c3c3 100%);
         /* #c3c3c3 35%,  #c3c3c3 35%,
         #F5BA55 65%); */
 }
@@ -178,13 +185,13 @@ article > p {
 /* } */
 
 .container {
-  max-width: 30%;
-  width: 35%;
+  max-width: 40%;
+  width: 40%;
   margin: 0;
   padding: 0;
   position: relative;
   height: 100%;
-  left: 0%;
+  left: 7%;
 }
 .container div {
   height: 500px;
@@ -198,7 +205,7 @@ div.sticky {
 	height: 100%;
   padding-top: 7%;
 	/* margin: 0; */
-  margin-left: 25%;
+  margin-left: 17%;
 	top: 18%;
 	/* left: 10; */
 }
