@@ -1,0 +1,158 @@
+<!DOCTYPE html> <html lang="en">
+
+<head>
+  <meta charset="UTF-8"> <meta name="viewport" profile="http://www.w3.org/2005/10/profile" content="width=device-width,
+  initial-scale=1.0"> <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>myFirstScrollytell</title>
+
+  <link rel="stylesheet"
+  href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+  crossorigin = 'anonymous'>
+
+  <link rel="stylesheet" href="main.css">
+  <link rel="icon"
+  type="image/svg"
+  href="visuals/thumbnail.svg">
+</head>
+
+<body id = 'Body'>
+
+    <header class = 'showcase'>
+        <div class ='headerContent'>
+         <!-- <div class="SGLabel">
+          <p class="fadingContent"> South Georgia </p>
+          <img class="fadingContent" src = 'visuals/backgroundStereoLegend.png' alt = 'Legend' style="width: 200px;
+          margin-top:-50%;">
+
+        </div> -->
+            <img src = 'visuals/krillV2.svg' class = 'logo' alt = 'Krill'>
+            <div class = 'title'>
+              This is a story about the life of Antarctic krill. <br><br>
+                <!-- <p style="color: #bfbfbf" > -->
+                  Hover over the screen to start
+                <!-- </p> -->
+            </div>
+            <!-- <div class="titleSubtext">
+              Dominik Bahlburgs
+            </div> -->
+        </div>
+    </header>
+
+    <!-- Services -->
+    <section class = 'services'>
+      <div class="containerHeader grid-3 center">
+        <div>
+          <i class = 'fab fa-youtube fa-3x'></i>
+          <h3>YouTube</h3>
+          <p>Lorem Ipsum</p>
+        </div>
+        <div>
+          <i class = 'fas fa-chalkboard-teacher fa-3x'></i>
+          <h3>Courses</h3>
+          <p>Lorem Ipsum</p>
+        </div>
+        <div>
+          <i class = 'fas fa-briefcase fa-3x'></i>
+          <h3>Freelancing Projects</h3>
+          <p>Lorem Ipsum</p>
+        </div>
+      </div>
+    </section>
+
+<section class="container">
+        <div class="content">
+          <h1 class="sectionHead">Antarctic krill throughout the  <br> year</h1>
+          <p class = 'sectionText'>
+            With this project, I want to tell you an interactive  <br>
+            story about the life of Antarctic krill. <br>
+          Antarctic krill are shrimp-like animals reaching <br>
+          a maximum size of 6cm. Although they are small, <br>
+          krill are considered  a key species in the marine <br>
+          Antarctic ecosystem due to their huge abundance.<br>
+          Many other species depend on krill as a food source <br>
+          but the small crustaceans also play a critical role in <br>
+          the cycling of nutrients. Throughout their lifes, krill <br>
+          have to cope with some  of the harshest environmental <br>
+          conditions on earth.</p>
+        </div>
+    </section>
+    <section class="container">
+      <div class="content">
+        <h1 class="sectionHead">The sea ice extends quickly</h1>
+        <p class = 'sectionText'>As days become shorter</p>
+      </div>
+    </section>
+    <section class="container">
+      <div class="content">
+        <h1 class="sectionHead">Colours fade out</h1>
+        <p class = 'sectionText'>because I want to explain something</p>
+      </div>
+    </section>
+  <div id='set-height'></div>
+
+
+
+  <!-- <video id="v0" tabindex="0" autobuffer preload>
+    <source type = 'video/mp4;codecs="avc1.42E01E, mp4a.40.2"' src="videos/video720.mp4"></source>
+    <source type = "video/webm; codecs=&quot;vp8, vorbis&quot;" src="videos/video720.webm"></source>
+  </video> -->
+
+
+  <script src = 'sticky.js'></script>
+
+  <script type = "text/javascript">
+  enterView({
+    selector:'section',
+    enter: function(el){
+      el.classList.add('entered');
+    }
+
+  })
+
+  var frameNumber = 0, // start video at frame 0
+  // lower numbers = faster playback
+  playbackConst = 800, // Set to 1000 to make the playback slower
+  // get page height from video duration
+  setHeight = document.getElementById("set-height"),
+  // select video element
+  vid = document.getElementById('v0');
+  // dynamically set the page height according to video length
+  vid.addEventListener('loadedmetadata', function () {
+    setHeight.style.height = Math.floor(vid.duration) * playbackConst + "px";
+  });
+
+  // // Use requestAnimationFrame for smooth playback
+  function scrollPlay() {
+    var frameNumber = window.pageYOffset / playbackConst;
+    vid.currentTime = frameNumber;
+    window.requestAnimationFrame(scrollPlay);
+  }
+
+  window.requestAnimationFrame(scrollPlay);
+  </script>
+
+<footer class = 'center bg-dark grid-2'>
+  <div>
+    <p>Dominik Bahlburg &copy; 2021</p>
+  </div>
+  <div>
+  <a href="https://tu-dresden.de/bu/umwelt/forst/ww/bsa/die-professur/staff/dominik-bahlburg" class="icon-block">
+      <!-- <i class="fab fa-twitter-square fa-3x" style="color:#DDDDDD;"></i> -->
+      <img src="logos/tuDresden.svg" alt="twitter" width="50" height="50">
+  </a>
+    <a href="https://twitter.com/DBahlburg" class="icon-block">
+        <!-- <i class="fab fa-twitter-square fa-3x" style="color:#DDDDDD;"></i> -->
+        <img src="logos/twitterWhite.svg" alt="twitter" width="50" height="50">
+    </a>
+    <a href="https://github.com/dbahlburg" class="icon-block">
+        <!-- <i class="fab fa-twitter-square fa-3x" style="color:#DDDDDD;"></i> -->
+        <img src="logos/github.svg" alt="twitter" width="50" height="50">
+    </a>
+  </div>
+
+</footer>
+
+
+</body>
+
+</html>
