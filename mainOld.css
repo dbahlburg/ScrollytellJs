@@ -182,23 +182,12 @@ section:nth-of-type(3){
   margin:auto;
 }
 
-.bg-dark{
-  background: #1f1f1f;
-  color: #d6d6d6;
-}
-
 footer{
   padding: 2.2rem
 }
 footer p{
   margin: 0;
 }
-
-
-
-
-
-
 
 
 /* ----------------------------------------------
