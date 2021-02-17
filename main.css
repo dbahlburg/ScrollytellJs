@@ -108,8 +108,8 @@ filter:blur(0px);
 
 .grid-3{
   display: grid;
-  grid-gap: 100px;
-  background-color: #575757;
+  grid-gap: 80px;
+  background-color: #c3c3c3;
   grid-template-columns: repeat(3, 1fr);
 }
 
