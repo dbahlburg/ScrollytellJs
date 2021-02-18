@@ -150,7 +150,8 @@ h2{
   line-height: 1.5;
   padding-top: 35%;
   font-weight: 300;
-  font-size: 20px;
+  /* font-size: 20px; */
+  font-size: 125%;
 }
 svg{
   padding: 20px;
@@ -200,7 +201,7 @@ article > p {
   left: 7%;
 }
 .container div {
-  height: 500px;
+  height: 690px;
   display: block;
   padding: 0 6%;
   /* background-color: #c3c3c3; */
