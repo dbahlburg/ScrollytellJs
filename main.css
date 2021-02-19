@@ -23,8 +23,8 @@ html, body { height: 100%;
   background-size: cover;
   background-position:center;
   display:block;
-  filter:blur(2px) opacity(0.2);
-  -webkit-filter:blur(2px) opacity(0.2);
+  filter:blur(2px) opacity(0);
+  -webkit-filter:blur(2px) opacity(0);
   transition: all 500ms;
 }
 
@@ -204,7 +204,9 @@ article > p {
   height: 690px;
   display: block;
   padding: 0 6%;
-  /* background-color: #c3c3c3; */
+}
+.stageNoTitle {
+  opacity: 0.1;
 }
 div.sticky {
 	position: sticky;
@@ -216,8 +218,14 @@ div.sticky {
 	top: 18%;
 	/* left: 10; */
 }
-
-
+.redText
+{
+    color: #820e0e;
+    font-weight: 600;
+}
+br {
+        line-height: 350%;
+     };
 
 
 
