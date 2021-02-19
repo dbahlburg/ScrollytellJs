@@ -67,12 +67,18 @@
                   At this point of their development, the krill have reached a size of around 3mm.</h2></p>
             </div>
             <div id="div10" class = 'stageNoTitle'>
-              <p>  <h2><strong>Furcilia</strong> <br> Antarctic krill start their life as an <strong>egg</strong>. During spawning season, each female releases <strong>thousands</strong> of small eggs.
-                After approximately 30 days, a small <strong>nauplius-larva</strong> hatches and begins its life in the water column.</h2></p>
+              <p>  <h2><strong>Furcilia</strong> <br> Furcilia larvae already strongly resemble juvenile krill but are much smaller with a maximum size of 11mm in their sixth and final substage.
+                While going through the furcilia stage, the eyes start to <strong>extend out of the carapace</strong>, the legs and mouth parts fully developed and most importantly, the <strong>feeding basket</strong> is now present.
+                The feeding basket is formed by a number of front legs with very fine appendages. Through rhythmic movements of those legs, krill filter the surrounding water with astonishing efficiency.
+                They are able to retain almost <strong>100%</strong> of particles down to sizes as low as <strong>1 &#956m</strong>. </h2></p>
             </div>
             <div id="div12" class = 'stageNoTitle'>
-              <p>  <h2><strong>Adult</strong> <br> Antarctic krill start their life as an <strong>egg</strong>. During spawning season, each female releases <strong>thousands</strong> of small eggs.
-                After approximately 30 days, a small <strong>nauplius-larva</strong> hatches and begins its life in the water column.</h2></p>
+              <p>  <h2><strong>Adult</strong> <br> #Adult
+            2 years after hatching, krill finally reach the adult stage. As adults they grow to a maximum size of <strong>60mm</strong>.
+            In contrast to the juvenile stage which comes in between furcilia and adults, the <strong>reproduction organs</strong> are now differentiated and
+            functional. Krill usually start reproducing in their second year of life and do so <strong>annually</strong> until they reach their expected life
+            span of 6 years.
+            </h2></p>
             </div>
           </article>
 
@@ -88,8 +94,8 @@
             />
 
             <path id="naupliusEyeBefore"
-             fill:"#000000"
-             d="m 105.8917,94.195614 c 0.20747,-1.608338 1.50805,-1.506346 2.76088,-1.756912 0.18344,-0.03669 0.3149,-0.250989 0.50198,-0.250989 0.0837,0 -0.0464,0.181377 0,0.250989 0.36512,0.547677 0.88674,1.372145 0.25099,2.007899 -0.43297,0.432969 -3.01608,-0.126548 -3.51385,-0.250987 z"/>
+             fill:"#bd1515"
+             d="m 106.15423,101.93638 c -2.01047,-0.24209 -3.90317,-1.03025 -5.25904,-2.189967 -0.35671,-0.305097 -0.84925,-0.887334 -1.128473,-1.333981 -0.792767,-1.268144 -1.163624,-2.890401 -1.040817,-4.552921 0.20213,-2.73658 0.86009,-4.43177 2.31347,-5.96065 1.22636,-1.29006 2.87049,-2.26602 5.06645,-3.00745 l 0.87121,-0.29414 0.77441,10e-4 c 2.01068,0.002 3.94359,0.58945 5.61983,1.70541 1.96634,1.30909 2.94024,2.62629 3.24527,4.38924 0.11513,0.6655 0.11508,2.50666 -1.4e-4,3.38326 -0.14418,1.09707 -0.37452,2.35913 -0.49869,2.73257 -0.26023,0.782574 -0.80499,1.675028 -1.44199,2.362345 -1.24816,1.346824 -3.28163,2.372544 -5.35127,2.699274 -0.60424,0.0953 -2.58355,0.13663 -3.17023,0.0659 z"/>
 
              <path id="thirdChannel"
              fill:"#000000"
@@ -188,7 +194,7 @@
 
 
   var tween1_2 = KUTE.fromTo('#naupliusEyeBefore',
-  { path: '#naupliusEyeBefore', attr:{ fill: "#000000"} },
+  { path: '#naupliusEyeBefore', attr:{ fill: "#820e0e"} },
   { path: '#naupliusEye', attr:{ fill: "#820e0e"} },
   { duration: 200}
 );
@@ -213,7 +219,7 @@ var tween1_3 = KUTE.to('#thirdChannel',{opacity:0},
 
 var tween2_2 = KUTE.fromTo('#naupliusEyeBefore',
 { path: '#naupliusEye', attr:{ fill: "#820e0e"} },
-{ path: '#naupliusEyeBefore', attr:{ fill: "#000000"} },
+{ path: '#naupliusEyeBefore', attr:{ fill: "#820e0e"} },
 { duration: 200}
 );
 
