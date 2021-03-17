@@ -33,21 +33,13 @@
         <p class = headerSubSubtext> scroll to begin </p>
 
         <a href="#introduction">
-        <img border="0" alt="W3Schools" src="visuals/iconTriangle.svg" class = "landingTriangle">
+        <img border="0" alt="" src="visuals/iconTriangle.svg" class = "landingTriangle">
 
-        <!-- <img
-        src="visuals/iconTriangle.svg"
-        class = "landingTriangle"
-        alt="triangle with all three sides equal" /> -->
         </a>
       </div>
     </section>
 
     <section id = 'introduction'>
-      <!-- <img
-      src="visuals/krillVoronoi2.png"
-      class = "krillLogoIntro"
-      alt="triangle with all three sides equal" /> -->
       <div class = 'center grid-2'>
         <div> <img
         src="visuals/portrait.png"
@@ -225,7 +217,80 @@
 
               </section>
 
-              <section>
+              <section id = 'introduction'>
+                <div class="introductionDiv">
+                  <p><h2>Antarctic krill or Euphausia superba is a small crustacean of enormous importance to the ecosystem of the
+                    Southern Ocean. Even though the word krill is often associated with Antarctic krill which only occurs in Antarctica,
+                    there are a total of 31 different krill species which inhabit the oceans worldwide. However, none of the other 30
+                    species comes close to Antarctic krill in terms of abundance and importance to the regional ecosystem. With a total
+                    estimated biomass of up to 379 Million tonnes, Antarctic krill not only dominates the Southern Ocean ecosystem but
+                    is also considered one of the biomass-richest species on earth with its closest competitors being cattle and humans. <br>
+                    Due to this enormous abundance, Antarctic krill is an important prey item for many Southern Ocean predators such
+                    as crabeater seals, multiple species of penguins or even humpback, blue and fin whales. These close linkages between
+                    the crustaceans and its pursuers makes it an influential species in numerous ways. In a study from 2007, Dr. Jefferson
+                    Hinke (NOAA) and colleagues showed that annual fluctuations in krill abundance can be a main driver of penguin breeding
+                    success around the South Shetland islands which are one of the krill hotspots in the Southern Ocean.
+
+              In another example, researchers continue to explore the “krill-surplus-hypothesis” which aims to explain increased
+              penguins abundances during the 1970s and decreasing populations sizes from there on. According to the hypothesis,
+              the strong reduction in Antarctic whale and seal populations caused by commercial harvesting until the 1970s
+              reduced the feeding pressure of those predators on regional krill populations. This food surplus enabled penguins,
+              which in contrast were not commercially harvested, to grow in population size during these times. With the ongoing
+              recovery of whale and seal populations, competition for krill among its predators increases and penguin populations
+              start to drop. <br>
+              Both examples demonstrate how krill can directly and indirectly drive population dynamics of other species in a complex
+              network of trophic relationships.
+            </h2>
+            </p>
+                </div>
+
+
+              </section>
+
+
+                <!-- ########################################################################################################################################## -->
+                <!-- ########################################################################################################################################## -->
+
+
+    <div class="sectionHeader">
+      <p>The Southern Ocean</p>
+    </div>
+
+        <section id = 'scrollyside2'>
+
+          <div class = 'scrolly'>
+            <article class="containerScrolly2">
+
+              <div id="scrolly2Div1" >
+                <div class="scrollyTextBox" >
+                <p><h2><strong>Birth</strong> <br>The life of Antarctic krill starts as an <strong>egg</strong> of a diameter of 0.6mm. Usually, females spawn in deep waters where the depth exceeds 1000m. After release, the eggs sink down the water column at a rate of around 100-200m per day. Scientists believe that krill prefer these deep water spawning grounds in order to avoid eggs reaching the sea floor before hatching occurs.
+                  During this descent, the embryo undergoes multiple cell divisions until it develops into a <strong>nauplius larva</strong> and hatches after approximately 6 days. </h2></p>
+                </div>
+                </div>
+                <div id="scrolly2Div2" >
+                  <p>  <h2><strong>Nauplius I and II</strong> <br>The nauplius stage is a developmental stage shared by most marine crustaceans. Therefore, it is not unique to Antarctic krill but can also be found in the life cycles of lobsters, barnacles or copepods. As the first <strong>free-swimming</strong> stage, the nauplii of Antarctic krill start ascending in the water column until they reach depths of approximately 200m.
+                    The nauplius stage consists of the <strong>nauplius I and II </strong>substages. Nauplii are characterized by their oval body shape, their appendages and a <span class = 'redText'> rudimentary eye</span>. It takes the krill around 9 days to develop through the nauplius stages until the <strong>metanauplius</strong> stage is reached.</h2>
+                  </p>
+                </div>
+                <div id="scrolly2Div3" >
+                  <p>  <h2><strong>Nauplius I and II</strong> <br>The nauplius stage is a developmental stage shared by most marine crustaceans. Therefore, it is not unique to Antarctic krill but can also be found in the life cycles of lobsters, barnacles or copepods. As the first <strong>free-swimming</strong> stage, the nauplii of Antarctic krill start ascending in the water column until they reach depths of approximately 200m.
+                    The nauplius stage consists of the <strong>nauplius I and II </strong>substages. Nauplii are characterized by their oval body shape, their appendages and a <span class = 'redText'> rudimentary eye</span>. It takes the krill around 9 days to develop through the nauplius stages until the <strong>metanauplius</strong> stage is reached.</h2>
+                  </p>
+                </div>
+                      </article>
+
+
+                      <!-- svg -->
+                      <div class="sticky2">
+                      <img src="visuals/SSTMoreCurrents.png" width = 100% id = 'earthOverlay2' style = 'opacity:0'>
+                      <img src="visuals/SST7.png" width = 100% id = 'earthOverlay1' style = 'opacity:0'>
+                      <img src="visuals/fullColours2.png" width = 100% id = 'earthIntro'>
+
+                  </section>
+              <!-- ########################################################################################################################################## -->
+              <!-- ########################################################################################################################################## -->
+
+                          <section>
 
                 <hr style="width:83%;text-align:left;margin-left:9%">
 
@@ -562,6 +627,43 @@ let morph12 = () => {
   document.getElementById("div10").style.opacity = "1";
 }
 
+//Scrollysection 2
+let morphScrolly2_morph1 = () => {
+  document.getElementById("scrolly2Div2").style.transition = "opacity 0.2s linear 0s";
+  document.getElementById("scrolly2Div2").style.opacity = "1";
+  document.getElementById("scrolly2Div1").style.transition = "opacity 0.2s linear 0s";
+  document.getElementById("scrolly2Div1").style.opacity = "0.1";
+  document.getElementById("earthOverlay1").style.transition = "opacity 0.5s linear 0s";
+  document.getElementById("earthOverlay1").style.opacity = "1";
+}
+let morphScrolly2_morph2 = () => {
+  document.getElementById("scrolly2Div2").style.transition = "opacity 0.2s linear 0s";
+  document.getElementById("scrolly2Div2").style.opacity = "0.1";
+  document.getElementById("scrolly2Div1").style.transition = "opacity 0.2s linear 0s";
+  document.getElementById("scrolly2Div1").style.opacity = "1";
+  document.getElementById("earthOverlay1").style.transition = "opacity 0.5s linear 0s";
+  document.getElementById("earthOverlay1").style.opacity = "0";
+}
+let morphScrolly2_morph3 = () => {
+  document.getElementById("scrolly2Div3").style.transition = "opacity 0.2s linear 0s";
+  document.getElementById("scrolly2Div3").style.opacity = "0.1";
+  document.getElementById("scrolly2Div2").style.transition = "opacity 0.2s linear 0s";
+  document.getElementById("scrolly2Div2").style.opacity = "1";
+  document.getElementById("earthOverlay2").style.transition = "opacity 0.5s linear 0s";
+  document.getElementById("earthOverlay2").style.opacity = "1";
+}
+let morphScrolly2_morph4 = () => {
+  document.getElementById("scrolly2Div3").style.transition = "opacity 0.2s linear 0s";
+  document.getElementById("scrolly2Div3").style.opacity = "0.1";
+  document.getElementById("scrolly2Div2").style.transition = "opacity 0.2s linear 0s";
+  document.getElementById("scrolly2Div2").style.opacity = "1";
+  document.getElementById("earthOverlay2").style.transition = "opacity 0.5s linear 0s";
+  document.getElementById("earthOverlay2").style.opacity = "0";
+}
+
+
+
+
 //waypoints scroll constructor
 function scroll(n, offset, func1, func2){
   return new Waypoint({
@@ -584,6 +686,9 @@ new scroll('div8', '50%', morph7, morph8);
 new scroll('div10', '50%', morph9, morph10);
 new scroll('div12', '50%', morph11, morph12);
 
+//trigger these functions on page scroll
+new scroll('scrolly2Div2', '50%', morphScrolly2_morph1, morphScrolly2_morph2);
+new scroll('scrolly2Div3', '50%', morphScrolly2_morph3, morphScrolly2_morph4);
 
 </script>
 </body>
