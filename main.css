@@ -305,26 +305,48 @@ div.sticky {
 	max-width: 100%;
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
-  margin-top: 5%;
+  /* margin-top: 5%; */
 }
 
 .containerScrolly2 {
   max-width: 100%;
   width: 100%;
-  margin-top: -10%;
-  position: relative;
+  /* margin-top: -10%; */
+  /* position: relative; */
   height: 100%;
 }
 .containerScrolly2 div {
-  height: 900px;
-  left: 25%;
+  /* height: 900px; */
+  /* margin-left: 10%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  width:80%;
+  display: block;
+  z-index: 3; */
+}
+.scrollyTextBox{
+  margin-left: 15%;
+  width:70%;
   display: block;
   z-index: 3;
+    line-height: 1.7;
+    font-weight: 300;
+    font-size: 117%;
+    margin-top: 60%;
+    padding: 1%;
+    filter:opacity(0.85);
 }
-.scrollyEarthText{
-  widht: 50%;
-  height: 200px;
-  font-size: 30;
+#scrolly2Div1{
+  background-color:#ededed;
+  color: #111111;
+}
+#scrolly2Div2{
+  background-color:#ededed;
+  color: #111111;
+}
+#scrolly2Div3{
+  background-color:#ededed;
+  color: #111111;
 }
 div.sticky2 {
 	position: sticky;

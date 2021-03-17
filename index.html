@@ -261,21 +261,20 @@
           <div class = 'scrolly'>
             <article class="containerScrolly2">
 
-              <div id="scrolly2Div1" >
-                <div class="scrollyTextBox" >
-                <p><h2><strong>Birth</strong> <br>The life of Antarctic krill starts as an <strong>egg</strong> of a diameter of 0.6mm. Usually, females spawn in deep waters where the depth exceeds 1000m. After release, the eggs sink down the water column at a rate of around 100-200m per day. Scientists believe that krill prefer these deep water spawning grounds in order to avoid eggs reaching the sea floor before hatching occurs.
-                  During this descent, the embryo undergoes multiple cell divisions until it develops into a <strong>nauplius larva</strong> and hatches after approximately 6 days. </h2></p>
+              <div id="scrolly2Div1" class="scrollyTextBox">
+                <div >
+                <p><strong>The Southern Ocean</strong> <br>The Southern Ocean surrounds the Antarctic continent and is composed of sectors of the <strong>Atlantic, Indian and Pacific Ocean</strong>.
+                It is an Ocean with extreme <strong>seasonality</strong> which makes it an especially challenging home for its inhabitants.</p>
                 </div>
                 </div>
-                <div id="scrolly2Div2" >
-                  <p>  <h2><strong>Nauplius I and II</strong> <br>The nauplius stage is a developmental stage shared by most marine crustaceans. Therefore, it is not unique to Antarctic krill but can also be found in the life cycles of lobsters, barnacles or copepods. As the first <strong>free-swimming</strong> stage, the nauplii of Antarctic krill start ascending in the water column until they reach depths of approximately 200m.
-                    The nauplius stage consists of the <strong>nauplius I and II </strong>substages. Nauplii are characterized by their oval body shape, their appendages and a <span class = 'redText'> rudimentary eye</span>. It takes the krill around 9 days to develop through the nauplius stages until the <strong>metanauplius</strong> stage is reached.</h2>
-                  </p>
+                <div id="scrolly2Div2" class="scrollyTextBox">
+                  <p><strong>Thermal isolation</strong> <br>bla</p>
                 </div>
-                <div id="scrolly2Div3" >
-                  <p>  <h2><strong>Nauplius I and II</strong> <br>The nauplius stage is a developmental stage shared by most marine crustaceans. Therefore, it is not unique to Antarctic krill but can also be found in the life cycles of lobsters, barnacles or copepods. As the first <strong>free-swimming</strong> stage, the nauplii of Antarctic krill start ascending in the water column until they reach depths of approximately 200m.
-                    The nauplius stage consists of the <strong>nauplius I and II </strong>substages. Nauplii are characterized by their oval body shape, their appendages and a <span class = 'redText'> rudimentary eye</span>. It takes the krill around 9 days to develop through the nauplius stages until the <strong>metanauplius</strong> stage is reached.</h2>
-                  </p>
+                <div id="scrolly2Div3" class="scrollyTextBox">
+                  <p> <strong>The Antarctic Circumpolar Current</strong> <br>another bla</p>
+                </div>
+                <div id="scrolly2Div4" class="scrollyTextBox">
+                  <p> </p>
                 </div>
                       </article>
 
@@ -632,13 +631,13 @@ let morphScrolly2_morph1 = () => {
   document.getElementById("scrolly2Div2").style.transition = "opacity 0.2s linear 0s";
   document.getElementById("scrolly2Div2").style.opacity = "1";
   document.getElementById("scrolly2Div1").style.transition = "opacity 0.2s linear 0s";
-  document.getElementById("scrolly2Div1").style.opacity = "0.1";
+  document.getElementById("scrolly2Div1").style.opacity = "0";
   document.getElementById("earthOverlay1").style.transition = "opacity 0.5s linear 0s";
   document.getElementById("earthOverlay1").style.opacity = "1";
 }
 let morphScrolly2_morph2 = () => {
   document.getElementById("scrolly2Div2").style.transition = "opacity 0.2s linear 0s";
-  document.getElementById("scrolly2Div2").style.opacity = "0.1";
+  document.getElementById("scrolly2Div2").style.opacity = "0";
   document.getElementById("scrolly2Div1").style.transition = "opacity 0.2s linear 0s";
   document.getElementById("scrolly2Div1").style.opacity = "1";
   document.getElementById("earthOverlay1").style.transition = "opacity 0.5s linear 0s";
@@ -646,15 +645,15 @@ let morphScrolly2_morph2 = () => {
 }
 let morphScrolly2_morph3 = () => {
   document.getElementById("scrolly2Div3").style.transition = "opacity 0.2s linear 0s";
-  document.getElementById("scrolly2Div3").style.opacity = "0.1";
+  document.getElementById("scrolly2Div3").style.opacity = "1";
   document.getElementById("scrolly2Div2").style.transition = "opacity 0.2s linear 0s";
-  document.getElementById("scrolly2Div2").style.opacity = "1";
+  document.getElementById("scrolly2Div2").style.opacity = "0";
   document.getElementById("earthOverlay2").style.transition = "opacity 0.5s linear 0s";
   document.getElementById("earthOverlay2").style.opacity = "1";
 }
 let morphScrolly2_morph4 = () => {
   document.getElementById("scrolly2Div3").style.transition = "opacity 0.2s linear 0s";
-  document.getElementById("scrolly2Div3").style.opacity = "0.1";
+  document.getElementById("scrolly2Div3").style.opacity = "0";
   document.getElementById("scrolly2Div2").style.transition = "opacity 0.2s linear 0s";
   document.getElementById("scrolly2Div2").style.opacity = "1";
   document.getElementById("earthOverlay2").style.transition = "opacity 0.5s linear 0s";
@@ -687,8 +686,8 @@ new scroll('div10', '50%', morph9, morph10);
 new scroll('div12', '50%', morph11, morph12);
 
 //trigger these functions on page scroll
-new scroll('scrolly2Div2', '50%', morphScrolly2_morph1, morphScrolly2_morph2);
-new scroll('scrolly2Div3', '50%', morphScrolly2_morph3, morphScrolly2_morph4);
+new scroll('scrolly2Div2', '100%', morphScrolly2_morph1, morphScrolly2_morph2);
+new scroll('scrolly2Div3', '100%', morphScrolly2_morph3, morphScrolly2_morph4);
 
 </script>
 </body>
