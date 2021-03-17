@@ -325,8 +325,8 @@ div.sticky {
   z-index: 3; */
 }
 .scrollyTextBox{
-  margin-left: 15%;
-  width:70%;
+  margin-left: 22.5%;
+  width:55%;
   display: block;
   z-index: 3;
     line-height: 1.7;
@@ -368,8 +368,20 @@ div.sticky2 {
   left:0%;
   z-index: 1;
 }
+#mainText1{
+  /* margin-top: 7%; */
+}
 
-
+.mainTextDiv{
+  position: relative;
+  height: 100%;
+  margin-top: -20%;
+  margin-bottom: 6%;
+  margin-left: 25%;
+  margin-right: 25%;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 200;
+}
 .redText
 {
     color: #820e0e;
