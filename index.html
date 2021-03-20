@@ -23,12 +23,13 @@
 
   <section id = 'header'>
     <div class="fullscreen-bg">
-      <video loop muted autoplay poster="videos/krill.png" class="fullscreen-bg__video">
+      <!-- <video loop muted autoplay poster="videos/krill.png" class="fullscreen-bg__video">
         <source src="videos/krill.mp4" type="video/mp4">
-        </video>
+        </video> -->
+          <img src="videos/krill.gif" class="fullscreen-bg__video" width = 100% height = 100%>
       </div>
       <div class="landingPageContainer center">
-        <p class = landingPageContent><h1>This is a story about the life of Antarctic krill</h1> </p>
+        <p class = landingPageContent><h1>This is a story about the life of <br> Antarctic krill</h1> </p>
         <br>
         <p class = headerSubSubtext> scroll to begin </p>
 
@@ -278,6 +279,18 @@
                   It constantly transports water around Antarctica in a clockwise direction and prevents the mixing of Antarctic and more northerly surface waters.</p>
                 </div>
                 <div id="scrolly2Div4" class="scrollyTextBox">
+                  <p> The ACC not only contributes to the separation of water masses but also acts as a "highway" around Antarctica. Particles trapped in the ACC can
+                    travel as far as 17'000 kilometers in only three years as shown in the map.
+                    Adult krill are usually not considered as passive drifters but researchers discuss the role of the ACC in connecting different krill populations
+                    across the Southern Ocean. </p>
+                </div>
+                <div id="scrolly2Div5" class="scrollyTextBox">
+                  <p> The ACC not only contributes to the separation of water masses but also acts as a "highway" around Antarctica. Particles trapped in the ACC can
+                    travel as far as 17'000 kilometers in only three years as shown in the map.
+                    Adult krill are usually not considered as passive drifters but researchers discuss the role of the ACC in connecting different krill populations
+                    across the Southern Ocean. </p>
+                </div>
+                <div id="scrolly2Div6" class="scrollyTextBox">
                   <p> </p>
                 </div>
                       </article>
@@ -287,6 +300,8 @@
                       <div class="sticky2">
                       <!-- <img src="visuals/SSTMoreCurrents.png" width = 100% id = 'earthOverlay2' style = 'opacity:0'>
                       <img src="visuals/SST7.png" width = 100% id = 'earthOverlay1' style = 'opacity:0'> -->
+                      <!-- <img src="visuals/winterIceLight.png" width = 100% id = 'earthOverlay4' loop=False style = 'opacity:0'> -->
+                      <img src="visuals/krillDrift.png" width = 100% id = 'earthOverlay3' style = 'opacity:0'>
                       <img src="visuals/sst2016MoreCurrents.png" width = 100% id = 'earthOverlay2' style = 'opacity:0'>
                       <img src="visuals/sstCentered.png" width = 100% id = 'earthOverlay1' style = 'opacity:0'>
                       <img src="visuals/fullColours.png" width = 100% id = 'earthIntro'>
@@ -665,8 +680,39 @@ let morphScrolly2_morph4 = () => {
   document.getElementById("earthOverlay2").style.transition = "opacity 0.5s linear 0s";
   document.getElementById("earthOverlay2").style.opacity = "0";
 }
+let morphScrolly2_morph5 = () => {
+  document.getElementById("scrolly2Div4").style.transition = "opacity 0.2s linear 0s";
+  document.getElementById("scrolly2Div4").style.opacity = "1";
+  document.getElementById("scrolly2Div3").style.transition = "opacity 0.2s linear 0s";
+  document.getElementById("scrolly2Div3").style.opacity = "0";
+  document.getElementById("earthOverlay3").style.transition = "opacity 0.5s linear 0s";
+  document.getElementById("earthOverlay3").style.opacity = "1";
+}
+let morphScrolly2_morph6= () => {
+  document.getElementById("scrolly2Div4").style.transition = "opacity 0.2s linear 0s";
+  document.getElementById("scrolly2Div4").style.opacity = "0";
+  document.getElementById("scrolly2Div3").style.transition = "opacity 0.2s linear 0s";
+  document.getElementById("scrolly2Div3").style.opacity = "1";
+  document.getElementById("earthOverlay3").style.transition = "opacity 0.5s linear 0s";
+  document.getElementById("earthOverlay3").style.opacity = "0";
+}
 
-
+let morphScrolly2_morph7 = () => {
+  document.getElementById("scrolly2Div5").style.transition = "opacity 0.2s linear 0s";
+  document.getElementById("scrolly2Div5").style.opacity = "1";
+  document.getElementById("scrolly2Div4").style.transition = "opacity 0.2s linear 0s";
+  document.getElementById("scrolly2Div4").style.opacity = "0";
+  document.getElementById("earthOverlay4").style.transition = "opacity 0.5s linear 0s";
+  document.getElementById("earthOverlay4").style.opacity = "1";
+}
+let morphScrolly2_morph8= () => {
+  document.getElementById("scrolly2Div5").style.transition = "opacity 0.2s linear 0s";
+  document.getElementById("scrolly2Div5").style.opacity = "0";
+  document.getElementById("scrolly2Div4").style.transition = "opacity 0.2s linear 0s";
+  document.getElementById("scrolly2Div4").style.opacity = "1";
+  document.getElementById("earthOverlay4").style.transition = "opacity 0.5s linear 0s";
+  document.getElementById("earthOverlay4").style.opacity = "0";
+}
 
 
 //waypoints scroll constructor
@@ -694,6 +740,8 @@ new scroll('div12', '50%', morph11, morph12);
 //trigger these functions on page scroll
 new scroll('scrolly2Div2', '100%', morphScrolly2_morph1, morphScrolly2_morph2);
 new scroll('scrolly2Div3', '100%', morphScrolly2_morph3, morphScrolly2_morph4);
+new scroll('scrolly2Div4', '100%', morphScrolly2_morph5, morphScrolly2_morph6);
+new scroll('scrolly2Div5', '100%', morphScrolly2_morph7, morphScrolly2_morph8);
 
 </script>
 </body>
